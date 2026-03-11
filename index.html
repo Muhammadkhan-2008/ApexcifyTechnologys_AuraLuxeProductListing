@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraLuxe | Premium Product Listing</title>
+    <meta name="description" content="Discover AuraLuxe - The ultimate destination for premium, tech-forward lifestyle products.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    
+    <header class="glass-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="AuraLuxe Logo" id="site-logo">
+                <span>AuraLuxe</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Discover</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Owners</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn-icon" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                <button class="btn-primary">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-carousel container">
+            <div class="carousel-track" id="main-carousel">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active" data-id="1">
+                    <div class="slide-content">
+                        <span class="badge">Featured Selection</span>
+                        <h1 class="stagger">Sonic Eclipse <br>Wireless Headphones</h1>
+                        <p class="stagger">Experience sound in its purest form. Advanced noise cancellation meets artisanal design.</p>
+                        <div class="slide-info stagger">
+                            <div class="owner">
+                                <span class="label">Curated by</span>
+                                <span class="name">Apexcify Designs</span>
+                            </div>
+                            <div class="price">
+                                <span class="label">Starting at</span>
+                                <span class="amount">$499.00</span>
+                            </div>
+                        </div>
+                        <div class="slide-actions stagger">
+                            <button class="btn-glow">Add to Cart</button>
+                            <button class="btn-outline">Explore Product</button>
+                        </div>
+                    </div>
+                    <div class="slide-visual">
+                        <div class="img-container">
+                            <img src="assets/product1.png" alt="Sonic Eclipse Headphones">
+                            <div class="visual-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide" data-id="2">
+                    <div class="slide-content">
+                        <span class="badge">Limited edition</span>
+                        <h1 class="stagger">Nebula Chronos <br>Precision Watch</h1>
+                        <p class="stagger">Timekeeping redefined. A fusion of cosmic aesthetics and aerospace-grade engineering.</p>
+                        <div class="slide-info stagger">
+                            <div class="owner">
+                                <span class="label">Curated by</span>
+                                <span class="name">AuraLuxe Labs</span>
+                            </div>
+                            <div class="price">
+                                <span class="label">Starting at</span>
+                                <span class="amount">$1,250.00</span>
+                            </div>
+                        </div>
+                        <div class="slide-actions stagger">
+                            <button class="btn-glow">Add to Cart</button>
+                            <button class="btn-outline">Explore Product</button>
+                        </div>
+                    </div>
+                    <div class="slide-visual">
+                        <div class="img-container">
+                            <img src="assets/product2.png" alt="Nebula Chronos Watch">
+                            <div class="visual-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button id="prevBtn" class="control-btn" aria-label="Previous Product">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <div class="carousel-dots" id="carouselDots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+                <button id="nextBtn" class="control-btn" aria-label="Next Product">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="product-listing container">
+            <div class="section-header">
+                <h2>Explore Collection</h2>
+                <div class="filter-tabs" id="filterTabs">
+                    <button class="tab active" data-category="all">All</button>
+                    <button class="tab" data-category="electronics">Tech</button>
+                    <button class="tab" data-category="fashion">Lifestyle</button>
+                    <button class="tab" data-category="home">Decor</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be injected via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                     <img src="assets/logo.png" alt="AuraLuxe Logo">
+                    <span>AuraLuxe</span>
+                </div>
+                <p>Redefining premium retail through immersive design.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="link-group">
+                    <h4>Support</h4>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 AuraLuxe by Apexcify Technologys. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
